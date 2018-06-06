@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myproject.com.fornec.Activity.CadastroClienteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editCadClienNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nome"
+        android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editCadClienEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editCadClienSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_senha"
+        android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_confirm_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editCadClienConfirmSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_confirm_senha"
+        android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sua Localização"
+        android:textColor="#00BFFF"
+        />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_confirm_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editCadClienEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_estado"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_confirm_cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editCadClienCidade"
+                android:hint="@string/hint_cidade"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_confirm_bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editCadClienBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_bairro"
+        android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/textViewDadosPessoais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dados Pessoais"
+        android:textColor="#00BFFF"
+        />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_login_confirm_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editCadClienTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_telefone"
+        android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+     <TextView
+         android:id="@+id/textViewCatInteresse"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Categoria de Interesse"
+         android:textColor="#00BFFF"
+         />
+
+     <Spinner
+         android:id="@+id/spinnerCadCliente"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+         />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

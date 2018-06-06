@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myproject.com.fornec.Activity.ListarFornecedorActivity">
+
+    <TextView
+        android:id="@+id/textViewListaFornec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha um fornecedor"
+        android:textColor="#00BFFF"
+        android:textSize="20dp"
+        />
+
+
+    <ListView
+        android:id="@+id/listViewFornecedores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    </ListView>
+
+</LinearLayout>

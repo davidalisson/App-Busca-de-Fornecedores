@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#FFFF"
+    tools:context="myproject.com.fornec.Activity.CadastroFornecedorActivity">
+
+
+    <Button
+        android:id="@+id/btOpcaoCadastroCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/cliente"
+        android:text="Cliente" />
+
+    <Button
+        android:id="@+id/btOpcaoCadastroFornecedor"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fornecedor"
+        android:drawableTop="@drawable/fornecedor"
+        android:background="#FFFFFF"
+    />
+
+</LinearLayout>
+

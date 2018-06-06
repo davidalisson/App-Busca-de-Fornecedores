@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myproject.com.fornec.Activity.PerfilFornecedorActivity"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPerfilFornec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:id="@+id/textViewPerfilNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+
+        />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/ratingBarPerfilFornec"
+        android:theme="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="3"
+        android:isIndicator="true"
+        />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/NestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewPerfilProdutos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:hint="@string/hint_perfil_produtos"
+            android:textColor="#477fe1"
+            android:layout_marginLeft="@dimen/margin_16"
+            />
+
+    <TextView
+        android:id="@+id/textViewPerfilProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="#477fe1"
+        android:layout_marginLeft="@dimen/margin_16"
+        />
+        <TextView
+            android:id="@+id/textViewPerfilCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:hint="@string/hint_perfil_cidade"
+            android:textColor="#477fe1"
+            android:layout_marginLeft="@dimen/margin_16"
+            />
+        <TextView
+            android:id="@+id/textViewPerfilCidade2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textColor="#477fe1"
+            android:layout_marginLeft="@dimen/margin_16"
+            />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/textViewPerfilInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/hint_perfil_texto_informe"
+        android:textColor="#477fe1"
+        android:textSize="20sp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/NestedScrollView"
+        app:layout_anchorGravity="bottom|end"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btSolicitarOrcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:src="@drawable/ic_action_add"
+        app:fabSize="normal"
+        app:layout_anchor="@id/NestedScrollView"
+        app:layout_anchorGravity="bottom|end"
+        android:background="#ffffff"
+        android:textColor="#28c4b4"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

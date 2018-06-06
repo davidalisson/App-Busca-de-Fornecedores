@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myproject.com.fornec.Activity.PerfilChamadaOrcamentoActivity">
+
+    <TextView
+        android:id="@+id/textViewNomeCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00BFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace"
+        android:text="Nome do cliente:"
+        />
+
+    <TextView
+        android:id="@+id/textViewPerfilChamOrcNomeCliente"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewMensagemCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00BFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace"
+        android:text="Mensagem do cliente:"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewPerfilChamOrcMensagem"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewHorarioCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00BFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace"
+        android:text="Horário para contato:"
+        />
+
+    <TextView
+        android:id="@+id/textViewPerfilChamOrcHorario"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewTelefoneCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00BFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace"
+        android:text="Telefone para contato:"
+        />
+
+    <TextView
+        android:id="@+id/textViewPerfilChamOrcTelefone"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/btPerfilChamOrcFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Solicitacão"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textColor="#28c4b4"
+        />
+
+</LinearLayout>

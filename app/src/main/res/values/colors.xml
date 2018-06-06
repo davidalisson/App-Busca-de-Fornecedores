@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF3300</color>
+    <color name="colorPrimaryDark">#B22400</color>
+    <color name="colorAccent">#5c5c5c</color>
+
+    <color name="cor_bt_entrar">#5762d4</color>
+
+    <color name="cor_rating_normal">#ffff00</color>
+    <color name="cor_rating_ativado">#fff702</color>
+    <color name="colorDivider">#686764</color>
+</resources>

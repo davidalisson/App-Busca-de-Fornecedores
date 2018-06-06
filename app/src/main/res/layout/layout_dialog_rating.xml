@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/ratingBarAvaliarDiaglog"
+        android:theme="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_16"
+        android:stepSize="1"
+        android:numStars="5"
+        android:rating="4"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mensagem"
+            android:maxLines="1"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtMessage"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingTop="4dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            android:id="@+id/btAvaliarCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:background="#FFFF"
+
+            />
+
+        <Button
+            android:id="@+id/btAvaliarEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enviar"
+            android:background="#FFFF"
+            android:textColor="#62bc98"
+            />
+
+    </LinearLayout>
+</LinearLayout>

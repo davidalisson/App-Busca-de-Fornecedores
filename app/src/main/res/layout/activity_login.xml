@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="myproject.com.fornec.Activity.LoginActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_login_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editLoginSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_senha"
+        android:inputType="textPassword"
+
+        />
+    </android.support.design.widget.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkManterConectado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_manter_conectado"/>
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btLogar"
+        android:layout_width="match_parent"
+        android:background="@color/cor_bt_entrar"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_logar"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewLoginSemCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sem_cadastro"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/textViewRecuperarSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_recupera_senha"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>
